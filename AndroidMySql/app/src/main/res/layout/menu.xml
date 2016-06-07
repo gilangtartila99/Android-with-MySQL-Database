@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/avatar"
+        android:id="@+id/button_masuk_employee"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/briefcase"
+        android:id="@+id/button_masuk_item"
+        android:layout_marginEnd="54dp"
+        android:layout_alignTop="@+id/button_masuk_employee"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/notepad"
+        android:id="@+id/button_masuk_check"
+        android:layout_below="@+id/button_masuk_employee"
+        android:layout_alignStart="@+id/button_masuk_employee"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checking Items"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textIsSelectable="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/safebox"
+        android:id="@+id/button_logout"
+        android:layout_alignTop="@+id/button_masuk_check"
+        android:layout_alignStart="@+id/button_masuk_item" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Data"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/button_masuk_employee"
+        android:layout_alignEnd="@+id/button_masuk_employee"
+        android:layout_alignStart="@+id/button_masuk_employee"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Data"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/button_masuk_item"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/button_masuk_item"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Data"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/button_masuk_check"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignEnd="@+id/button_masuk_check"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignEnd="@+id/button_logout"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/employees"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
